@@ -1,0 +1,27 @@
+//Ejercicio #0 FizzBuzz.
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int i;
+    int eleccion;
+    printf("hasta que numero se hara el FizzBuzz? ");
+    scanf("%d",&eleccion);                              //sin validacion de entrada.
+    for (i=1;i<=eleccion;i++)
+    {
+        if (i%3==0 && i%5==0){
+            printf("FizzBuzz \n");
+        }
+       else if (i%3==0){
+            printf("Fizz \n");
+        }
+        else if (i%5==0){
+            printf("Buzz \n");
+        }
+        else {
+        printf("%d \n",i);
+        }
+    }
+         printf("\n \n");
+        printf("aqui finaliza este programa.\n");
+        
+}
